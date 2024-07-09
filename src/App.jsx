@@ -12,7 +12,10 @@ const App = () => {
   const [produto, setProduto] = React.useState('');
   const [linguagem, setLinguagem] = React.useState([]);
   const [termos, setTermos] = React.useState([]);
+  const [cep, setCep] = React.useState('');
  
+
+  
 
 
   return (
@@ -37,6 +40,17 @@ const App = () => {
         {nome}
         <br/>
         {email}
+
+        <Input 
+        label= "CEP" 
+        id="cep" 
+        type="text" 
+        value={cep}  
+        setValue={setCep} 
+      
+        placeholder="00000-000"
+        />
+      
     </form>
  
  </>
